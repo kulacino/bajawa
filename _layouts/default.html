@@ -1,1 +1,12 @@
-{{ content }}
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <main class="front-wrapper">
+      {% include header.html %}
+      {% include hero.html %}
+      {{ content }}
+      {% include footer.html %}
+    </main>
+  </body>
+</html>

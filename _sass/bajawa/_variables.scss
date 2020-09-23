@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Kreon:400,700');
+$base-font-type: 'Roboto', 'Lato', sans-serif;
+$heading-font-type: 'Fredericka the Great', cursive;
+$alternate-font-type: 'Kreon', serif;
+
+/** Font Size **/
+$base-font-size: 1em;
+
+/** Line Height Default **/
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+/** Other Size **/
+$base-border-radius: .52em;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+/** Theme Colors **/
+$black: #000;
+$white: #fff;
+$blue: #318fb5;
+$light-berry: #dd7e6b;
+$dark-berry: #7d0633;
+$action-color: $dark-berry;
+$dark-grey: #888888;
+$medium-grey: #ddd;
+$light-grey: #f1f1f1;
+
+/** Font Color **/
+$base-font-color: $dark-grey;
+
+/** Border **/
+$base-border-color: $light-grey;
+$base-border: 1px solid $base-border-color;
+
+/** Backgroud **/
+$base-bg-color: $white;
+$secondary-bg-color: tint($base-border-color, 80%);
+
+/** Forms **/
+$form-box-shadow: inset 0 1px 3px rgba($black, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+/** Animations **/
+$base-duration: 150ms;
+$base-timing: ease;

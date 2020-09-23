@@ -1,0 +1,60 @@
+# Site settings
+title         : "Bajawa"
+#title_right   : "space" # default: ""
+description   : "A minimalist, simple, and clean Jekyll theme for blogger and writer."
+keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, simple, clean, bajawa theme"
+url           : https://kulacino.github.io/bajawa # site url
+baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+cover         : "" # image uri like logo/cover image for site seo
+
+google_analytics  : UA-XXXXX-XX
+twitter_username  : "" # your twitter username
+comments_enabled  : false # if enabled (set to true), please provide your disqus_username
+disqus_shortname  : ""
+postshare_enabled : false
+github_username   : "" # your github username
+github_repository : "https://github.com/kulacino/bajawa" # you could remove this, this is only for demo purposes
+
+# Build settings
+permalink   : /:year/:month/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source      : ./
+destination : ./_site
+
+# Sass configuration
+sass:
+  sass_dir  : _sass
+  style     : compressed # expanded
+
+assets:
+  cache     : false
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
+# Author settings
+author:
+  name     : "Jane Doe"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - ".ruby-version"
+  - "README.md"
+  - "bajawa.gemspec"

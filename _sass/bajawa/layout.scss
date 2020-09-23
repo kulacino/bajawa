@@ -1,0 +1,166 @@
+/** Main Container or Wrapper **/
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+html, body, .front-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: $base-font-type;
+  background-color: $base-bg-color;
+}
+
+hr {
+  border-top: none;
+  border-bottom: 2px solid lighten($light-grey, 7%);
+  width: 100%;
+  margin: $small-spacing 0;
+}
+
+.container {
+  padding: $base-spacing;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  font-weight: normal;
+}
+
+/** Front Page **/
+.post-list {
+
+}
+
+/** Post Page **/
+
+/** Single Page **/
+
+/** Header and Navbar **/
+.site-header {
+  border-bottom: 1px solid lighten($light-grey, 5%);
+  margin-bottom: $small-spacing;
+  min-height: 80px;
+}
+
+h1.logo {
+  float: left;
+  margin: 0 0 1em 0;
+  cursor: pointer;
+  letter-spacing: 0.8px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.navbar {
+  min-height: 65px;
+}
+
+.navbar-right {
+  float: right;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  pointer-events: all;
+  cursor: pointer;
+
+  li {
+    font-family: $alternate-font-type;
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 .6em;
+  }
+
+  a:link {
+    color: $dark-berry;
+  }
+  a:visited {
+    color: $dark-berry;
+  }
+  a:hover {
+    color: $light-berry;
+  }
+  a:active {
+    color: $light-berry;
+  }
+}
+
+/** Content **/
+/** Finally, CSS for content **/
+
+/** 1. Hero Image **/
+.page-hero {
+  display: block;
+  position: relative;
+  height: 640px;
+  background-color: $dark-grey;
+  transition: height 0.2s;
+  margin-bottom: 32px;
+}
+
+.hero-image {
+  /* Position and center the image to scale nicely on all screens */
+  position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  font-family: $base-font-type;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-title {
+  font-size: 20px;
+  color: $black;
+}
+
+.hero-desc {
+  color: $dark-grey;
+  font-family: $base-font-type;
+  font-weight: 400;
+}
+
+.hero-text button {
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: $black;
+  background-color: $light-grey;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: $dark-grey;
+  color: $white;
+}
+
+/** Main Container or Wrapper **/
+
+/** Footer **/
+
+/** Media Responsiveness **/
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}

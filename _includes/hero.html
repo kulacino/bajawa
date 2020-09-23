@@ -1,0 +1,10 @@
+<section class=page-hero">
+  <div class="hero-image">
+    <div style="background-image: url({{ heroimg | relative_url }})"></div>
+  </div>
+  <div class="hero-text">
+    <h1 class="hero-title">{{ heading | default: site.title | escape }}</h1>
+    <h2 class="hero-desc">{{ subheading | default: site.description | escape }}</h2>
+    <button>Read More</button>
+  </div>
+</section>
