@@ -45,7 +45,7 @@ hr {
 /** Header and Navbar **/
 .site-header {
   border-bottom: 1px solid lighten($light-grey, 5%);
-  margin-bottom: $small-spacing;
+  margin-bottom: .20em;
   min-height: 80px;
 }
 
@@ -60,12 +60,12 @@ h1.logo {
 }
 
 .navbar {
-  min-height: 65px;
+  min-height: 80px;
 }
 
 .navbar-right {
   float: right;
-  margin: 0;
+  margin: 0.3em 0 0 0;
   position: relative;
   padding: 0;
   pointer-events: all;
@@ -97,18 +97,13 @@ h1.logo {
 
 /** 1. Hero Image **/
 .page-hero {
-  display: block;
-  position: relative;
-  height: 640px;
-  background-color: $dark-grey;
-  transition: height 0.2s;
-  margin-bottom: 32px;
-}
-
-.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/heroimg.jpg");
+  height: 50%; /* Set a specific height */
+  background-color: $light-grey;
   /* Position and center the image to scale nicely on all screens */
-  position: center;
-  overflow: hidden;
+  position: relative;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -117,40 +112,42 @@ h1.logo {
 .hero-text {
   text-align: center;
   font-family: $base-font-type;
+  color: $white;
   position: absolute;
+  margin-top: 5px;
+  margin-bottom: 5px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
 }
 
 .hero-title {
-  font-size: 20px;
-  color: $black;
+  font-size: 24px;
+  font-weight: normal;
 }
 
 .hero-desc {
-  color: $dark-grey;
   font-family: $base-font-type;
   font-weight: 400;
 }
 
-.hero-text button {
+a.button {
   font-size: 16px;
-  border: none;
-  border-radius: 8px;
+  border: 2px solid $white;
+  border-color: $white;
   outline: 0;
   display: inline-block;
+  margin-top: 5px;
   padding: 10px 25px;
-  color: $black;
-  background-color: $light-grey;
+  color: $white;
+  background-color: transparent;
   text-align: center;
   cursor: pointer;
 }
 
-.hero-text button:hover {
-  background-color: $dark-grey;
-  color: $white;
+a.button:hover {
+  background-color: $white;
+  color: $black;
 }
 
 /** Main Container or Wrapper **/

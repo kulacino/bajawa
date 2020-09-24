@@ -1,5 +1,12 @@
----
-layout: default
----
-
-{{ content }}
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <main class="front-wrapper">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+    </main>
+  </body>
+  {% include foot.html %}
+</html>
