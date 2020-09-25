@@ -7,14 +7,14 @@
   }
 }
 
-html, body, .front-wrapper {
+html, body {
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: $base-font-type;
   background-color: $base-bg-color;
 }
 
@@ -25,139 +25,227 @@ hr {
   margin: $small-spacing 0;
 }
 
-.container {
-  padding: $base-spacing;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px;
-  font-weight: normal;
-}
-
-/** Front Page **/
-.post-list {
-
-}
-
-/** Post Page **/
-
-/** Single Page **/
-
-/** Header and Navbar **/
-.site-header {
-  border-bottom: 1px solid lighten($light-grey, 5%);
-  margin-bottom: .20em;
-  min-height: 80px;
-}
-
-h1.logo {
-  float: left;
-  margin: 0 0 1em 0;
-  cursor: pointer;
-  letter-spacing: 0.8px;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 400;
-}
-
-.navbar {
-  min-height: 80px;
-}
-
-.navbar-right {
-  float: right;
-  margin: 0.3em 0 0 0;
-  position: relative;
+/** CSS MAIN **/
+.wrapper-all {
   padding: 0;
-  pointer-events: all;
-  cursor: pointer;
-
-  li {
-    font-family: $alternate-font-type;
-    font-size: 14px;
-    display: inline-block;
-    padding: 0 .6em;
-  }
-
-  a:link {
-    color: $dark-berry;
-  }
-  a:visited {
-    color: $dark-berry;
-  }
-  a:hover {
-    color: $light-berry;
-  }
-  a:active {
-    color: $light-berry;
-  }
-}
-
-/** Content **/
-/** Finally, CSS for content **/
-
-/** 1. Hero Image **/
-.page-hero {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/heroimg.jpg");
-  height: 50%; /* Set a specific height */
-  background-color: $light-grey;
-  /* Position and center the image to scale nicely on all screens */
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: center;
-  font-family: $base-font-type;
-  color: $white;
-  position: absolute;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.hero-title {
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.hero-desc {
-  font-family: $base-font-type;
-  font-weight: 400;
-}
-
-a.button {
-  font-size: 16px;
-  border: 2px solid $white;
-  border-color: $white;
-  outline: 0;
-  display: inline-block;
-  margin-top: 5px;
-  padding: 10px 25px;
-  color: $white;
+  margin: 0;
   background-color: transparent;
-  text-align: center;
-  cursor: pointer;
-}
 
-a.button:hover {
-  background-color: $white;
-  color: $black;
-}
+  /** Header and Navbar **/
+  .site-header {
+    border-bottom: 1px solid lighten($light-berry, 20%);
+    margin: 0 auto 0 auto;
+    height: 100px;
 
-/** Main Container or Wrapper **/
+    .navbar {
+      height: 100px;
 
+      .nav-container {
+        padding: $base-spacing;
+        margin: $base-spacing/2 auto $base-spacing/2 auto;
+        max-width: $maxwidth;
+
+        h1.logo {
+          float: left;
+          margin: 0 0 1em 0;
+          cursor: pointer;
+          letter-spacing: 3px;
+          line-height: 28px;
+        }
+
+        .navbar-right {
+          float: right;
+          margin: 0.3em 0 0 0;
+          position: relative;
+          padding: 0;
+          pointer-events: all;
+          cursor: pointer;
+
+          li {
+            display: inline-block;
+            padding: 0 .6em;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  /** Front Page Layout **/
+    /** 1. Hero Image **/
+  .main-content-front {
+    padding: 0 0 100px 0;
+    margin: 0;
+
+    .hero-wrapper {
+      padding: 0;
+      margin: 0 ;
+      height: 50%;
+      background-color: red;
+
+      .hero-wrapper-container {
+        padding: 0;
+        margin: 0;
+
+        .hero-img {
+          /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/heroimg.jpg");
+          height: 500px; /* Set a specific height */
+          background-color: $light-grey;
+          display: block;
+          /* Position and center the image to scale nicely on all screens */
+          position: relative;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        /* Place text in the middle of the image */
+        a.button {
+          font-size: $base-font-size;
+          border: 2px solid $white;
+          border-color: $white;
+          outline: 0;
+          display: inline-block;
+          margin-top: 5px;
+          padding: 10px 25px;
+          color: $white;
+          background-color: transparent;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        a.button:hover {
+          background-color: $white;
+          color: $black;
+        }
+      }
+    }
+
+    /** 2. Recent Post **/
+    .recent-post-wrapper {
+      padding: 0;
+      margin: 0;
+
+      .recent-post-container {
+        margin: $base-spacing auto $base-spacing auto;
+        max-width: $maxwidth;
+
+        .section-title {
+          padding: 0;
+          margin: 1em*2 auto 1em auto;
+        }
+        .post-entry-grid {
+          padding-top: $base-spacing;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          grid-gap: 2em;
+
+          .entry-flex {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 2rem;
+          }
+        }
+        .button-post {
+          width: $maxwidth;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+
+          a.button {
+            font-size: $base-font-size;
+            border: 2px solid $dark-berry;
+            border-color: $dark-berry;
+            outline: 0;
+            display: inline-block;
+            margin: 5px auto 5px auto;
+            padding: 10px 25px;
+            color: $dark-berry;
+            background-color: transparent;
+            text-align: center;
+            cursor: pointer;
+          }
+
+          a.button:hover {
+            background-color: $dark-berry;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+/*** Post Layout ***/
+  .post-wrapper {
+    max-width: $maxwidth;
+    margin: $base-spacing auto $base-spacing auto;
+    padding: $base-spacing;
+
+    .post-header {
+      height: 80px;
+      margin: $base-spacing 0 $base-spacing 0;
+    }
+
+    .post-content {
+      margin: $base-spacing 0 $base-spacing 0;
+      color: $dark-grey;
+    }
+
+    .post-content hr {
+      display: block;
+      margin: 1em auto 1em auto;
+      border-style: double;
+      border-width: 2px;
+      color: $dark-berry;
+    }
+  }
+
+/*** Page Layout ***/
+  .page-container {
+    height: $maxheight;
+
+    .page-wrapper {
+      max-width: $maxwidth;
+      margin-left: auto;
+      margin-right: auto;
+      padding: $base-spacing;
+
+      .page-header {
+        height: 80px;
+        margin: $base-spacing 0 $base-spacing 0;
+      }
+
+      .page-content {
+        margin: $base-spacing 0 $base-spacing 0;
+        color: $dark-grey;
+      }
+    }
+  }
 /** Footer **/
+  .site-footer {
+    background-color: $light-grey;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    vertical-align: middle;
+
+    .footer-container {
+      padding: $base-spacing;
+      margin: auto;
+      height: 100px;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}
 
 /** Media Responsiveness **/
 @media screen and (max-width: 500px) {
   .navbar a {
     float: none;
     display: block;
+    text-align: center;
   }
 }

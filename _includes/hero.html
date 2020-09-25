@@ -1,7 +1,11 @@
-<section class="page-hero">
-  <div class="hero-text">
-    <h1 class="hero-title">{{ heading | default: site.title | escape }}</h1>
-    <h2 class="hero-desc">{{ subheading | default: site.description | escape }}</h2>
-    <a class="button" href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">Read More</a>
+<section class="hero-wrapper">
+  <div class="hero-wrapper-container">
+    <div class="hero-img">
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-title">{{ heading | default: site.title | escape }}</h1>
+      <h2 class="hero-desc">{{ subheading | default: site.description | escape }}</h2>
+      <a class="button" href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">Read More</a>
+    </div>
   </div>
 </section>

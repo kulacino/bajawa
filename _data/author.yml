@@ -1,0 +1,29 @@
+# Sample Authors
+# Call name in the post
+# example
+# author: Jane Doe
+# and it will get all the data mentioned here
+
+Jane Doe:
+  name: Jane Doe
+  picture: /assets/images/janedoe.jpg
+  twitter: "@janedoe"
+  links:
+    - title: Twitter
+      url: https://twitter.com/janedoe
+      icon: fab fa-twitter-square
+    - title: Github
+      url: https://github.com/ohjanedoe
+      icon: fab fa-github-square
+
+James Duh:
+  name: James Duh
+  picture: /assets/images/jamesduh.jpg
+  twitter: "@jamesduh"
+  links:
+    - title: Twitter
+      url: https://twitter.com/jamesduh
+      icon: fab fa-twitter-square
+    - title: Github
+      url: https://github.com/jamesduh
+      icon: fab fa-github-square

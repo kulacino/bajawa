@@ -1,0 +1,24 @@
+<section class="recent-post-wrapper">
+  <div class="recent-post-container">
+    <h1 class="section-title">Recent Posts</h1>
+    <div class="post-entry-grid">
+      {% for post in site.posts limit:6 %}
+      <div class="entry-flex">
+        <header class="post-title">
+          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+        </header>
+        <div class="post-meta">
+          <span>Posted at {{ post.date | date: "%b %d" }}</span>
+          by <span>{{ post.author }}</span>
+        </div>
+        <div class="post-excerpt">
+          {{ post.excerpt }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="button-post">
+      <a class="button" href="{{ '/blog' | prepend: site.baseurl | prepend: site.url }}">More Posts</a>
+    </div>
+  </div>
+</section>

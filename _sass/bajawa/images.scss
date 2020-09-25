@@ -1,0 +1,21 @@
+/** Image Styling **/
+
+/** Image inside Post Layout **/
+.post-content img {
+  max-width: 100%;
+  display: block;
+  border: 1px solid $dark-berry;
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto;
+}
+
+.post-content figure {
+  margin: auto;
+}
+
+.post-content figcaption {
+  margin: 5px auto;
+  font-size: 80%;
+  text-align: center;
+}

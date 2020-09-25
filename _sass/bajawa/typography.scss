@@ -40,8 +40,114 @@ h6 {
   font-size: rem(16);
 }
 
+/** Fonts Awesome **/
+i.fa {
+  color: $dark-berry;
+}
+
+/** Site Header **/
+h1.logo {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.navbar-right {
+  li {
+    font-family: $alternate-font-type;
+    font-size: 14px;
+  }
+  a:link {
+    color: $dark-berry;
+  }
+  a:visited {
+    color: $dark-berry;
+  }
+  a:hover {
+    color: $light-berry;
+  }
+  a:active {
+    color: $light-berry;
+  }
+}
+
+/** Hero Image **/
+.hero-text {
+  text-align: center;
+  font-family: $base-font-type;
+  color: $white;
+  position: absolute;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-title {
+  font-size: $page-title;
+  font-weight: normal;
+}
+
+.hero-desc {
+  font-family: $base-font-type;
+  font-weight: 400;
+}
+
+/** Front Page Recent Post **/
+.recent-post-container {
+  .section-title {
+    text-align: center;
+    font-weight: normal;
+    font-size: $page-title;
+    color: $dark-berry;
+  }
+  .post-entry-grid {
+    .entry-flex {
+      .post-title {
+        font-family: $alternate-font-type;
+        font-size: 20px;
+
+        a:hover {
+          color: $light-berry;
+          text-decoration: underline;
+        }
+      }
+      .post-excerpt {
+        color: $dark-grey;
+        font-weight: lighter;
+      }
+      .post-meta {
+        font-family: $base-font-type;
+        font-size: 12px;
+        color: $dark-grey;
+      }
+    }
+  }
+}
+
+/** POST TYPOGRAPHY **/
+
+h1.post-title {
+  color: $dark-berry;
+  font-size: $page-title;
+  font-weight: normal;
+}
+
+.post-content h1,h2,h3 {
+  font-weight: normal;
+}
+
+p.post-meta {
+  font-size: $page-title/2;
+}
+
+h1#page-title.page-title {
+  color: $dark-berry;
+  font-size: $page-title;
+}
+
 p {
-  margin: 0 0 $small-spacing;
+  margin: $small-spacing*2 0 $small-spacing*2 0;
 
   &.lead {
     font-size: rem(22);
@@ -55,9 +161,11 @@ a {
   transition: color $base-duration $base-timing;
 
   &:active,
-  &:focus,
-  &:hover {
+  &:focus {
     color: shade($action-color, 25%);
+  }
+  &:hover {
+    color: $light-berry;
   }
 }
 
@@ -89,18 +197,18 @@ blockquote {
 
 code {
   background: none;
-  border-radius: 0;
+  border-radius: 3px;
   border: none;
-  font-family: "SFMono-Regular",Menlo,Consolas,"Inconsolata",monospace;
+  font-family: $plaintext-font-type;
   font-size: 1em;
   margin: 0;
   padding: 0 5px;
-  background-color: lighten($light-grey, 13%);
+  background-color: lighten($light-berry, 25%);
 }
 
 pre {
   -webkit-overflow-scrolling: touch;
-  font-family: "SFMono-Regular",Menlo,Consolas,"Inconsolata",monospace;
+  font-family: $plaintext-font-type;
   font-size: 1em;
   margin: 0;
   padding: 5px 10px !important;
@@ -108,10 +216,12 @@ pre {
   max-height: 60em;
   white-space: pre;
   border: 1px solid $light-grey;
+  background-color: $light-grey;
 
   code {
     line-height: 1.75em;
     padding: 0 !important;
+    background-color: $light-grey;
   }
 }
 
@@ -132,4 +242,11 @@ dl {
     list-style-type: square;
     list-style-position: outside;
     list-style-image: none;
+}
+
+/** FOOTER **/
+footer .copyright, .credits {
+  font-size: 12px;
+  text-align: center;
+
 }

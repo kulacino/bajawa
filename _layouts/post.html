@@ -2,4 +2,21 @@
 layout: default
 ---
 
-{{ content }}
+<article class="post-container">
+  <div class="post-wrapper">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+        {% if page.author %} &middot;
+        <span>{{ page.author }}</span>
+        {% endif %}
+      </p>
+    </header>
+    <div class="post-content">
+      {{ content }}
+    </div>
+      {% include post-share.html %}
+      {% include post-author.html %}
+  </div>
+</article>

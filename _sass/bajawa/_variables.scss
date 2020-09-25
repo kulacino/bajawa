@@ -2,18 +2,23 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great');
 @import url('https://fonts.googleapis.com/css?family=Kreon:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
 $base-font-type: 'Roboto', 'Lato', sans-serif;
 $heading-font-type: 'Fredericka the Great', cursive;
+$plaintext-font-type: 'Courier Prime', 'Consolas', monospace;
 $alternate-font-type: 'Kreon', serif;
 
 /** Font Size **/
 $base-font-size: 1em;
+$page-title: 24px;
 
 /** Line Height Default **/
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 /** Other Size **/
+$maxwidth: 1000px;
+$maxheight: 800px;
 $base-border-radius: .52em;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
@@ -26,7 +31,7 @@ $blue: #318fb5;
 $light-berry: #dd7e6b;
 $dark-berry: #7d0633;
 $action-color: $dark-berry;
-$dark-grey: #888888;
+$dark-grey: #696969;
 $medium-grey: #ddd;
 $light-grey: #f1f1f1;
 

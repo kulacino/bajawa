@@ -13,7 +13,7 @@
   {% else %}
       {% capture page_title %}
           {%if page.slug == 'category' %}Category: {% endif %}
-          {%if page.slug == 'tag' %}Tag: {% endif %} {{ page.title }} | {{ site.title_left }}{{ site.title_right }}
+          {%if page.slug == 'tag' %}Tag: {% endif %} {{ page.title }} | {{ site.title }}
       {% endcapture %}
   {% endif %}
   {% capture page_title %}
@@ -68,7 +68,7 @@
   <meta property="og:title" content="{{ page_title }}">
   <meta property="og:image" content="{{ page_image }}">
   <meta property="og:description" content="{{ page_description }}">
-  <meta property="og:site_name" content="{{ site.author.name }}">
+  <meta property="og:site_name" content="{{ site.title }} | {{ site.description }}">
   <meta property="og:locale" content="en_US">
 
   <!-- Social: Twitter -->
@@ -85,7 +85,7 @@
 
   <!-- Canonical link tag -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title_left }}{{ site.title_right }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
   <!-- rel prev and next -->
   {% if paginator.previous_page %}
