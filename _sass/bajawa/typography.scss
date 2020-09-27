@@ -46,7 +46,7 @@ i.fa {
 }
 
 /** Site Header **/
-h1.logo {
+h1.logo-left {
   font-size: 24px;
   font-weight: 400;
 }
@@ -56,31 +56,12 @@ h1.logo {
     font-family: $alternate-font-type;
     font-size: 14px;
   }
-  a:link {
-    color: $dark-berry;
-  }
-  a:visited {
-    color: $dark-berry;
-  }
-  a:hover {
-    color: $light-berry;
-  }
-  a:active {
-    color: $light-berry;
-  }
 }
 
 /** Hero Image **/
 .hero-text {
-  text-align: center;
   font-family: $base-font-type;
   color: $white;
-  position: absolute;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .hero-title {

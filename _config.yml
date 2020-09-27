@@ -25,16 +25,13 @@ source      : ./
 destination : ./_site
 
 # Pagination Settings
-paginate: 2
+paginate: 5 # change this into your desired number, paginate 2 means: there will only be 2 titles of your blogpost in one page
 paginate_path: "/blog/page:num/"
 
 # Sass configuration
 sass:
   sass_dir  : _sass
   style     : compressed # expanded
-
-assets:
-  cache     : false
 
 defaults:
   - scope:
@@ -52,6 +49,8 @@ navbar:
     title: About
   - slug : blog
     title: Blog
+  - slug : search
+    title: Search
 
 exclude:
   - "Gemfile"

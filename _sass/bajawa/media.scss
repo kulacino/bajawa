@@ -1,0 +1,53 @@
+/** Media Responsiveness **/
+@media screen and (max-width: 600px) {
+  .navbar-right a:not(:first-child) {
+    display: none;
+  }
+  .navbar-right a.icon {
+    float: right;
+    display: block;
+    font-size: 1em*2;
+  }
+  .hero-img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-right.responsive {
+    position: relative;
+  }
+  .navbar-right.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar-right.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .recent-post-wrapper {
+    width: 100%;
+
+    .recent-post-container {
+      margin: 0 auto 0 auto;
+
+      .post-entry-grid {
+        margin: 0 $base-spacing*2.5 0 $base-spacing*2.5;
+
+        .entry-flex {
+          padding-bottom: $base-spacing;
+        }
+      }
+    }
+    .button-post {
+      margin-left: 30%;
+      margin-right: 30%;
+      text-align: center;
+    }
+  }
+}
