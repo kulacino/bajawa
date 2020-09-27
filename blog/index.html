@@ -1,12 +1,16 @@
 ---
-title: Blog
+title: Blog Archives
 layout: page
 ---
 
 <!-- post list -->
+<div class="blogpost-title">
 {% for post in paginator.posts %}
 <li><a href="{{post.url | prepend: site.baseurl}}"><h3>{{post.title}}</h3></a></li>
+<span>Posted at {{ post.date | date: "%b %d" }}</span>
+{{post.excerpt}}
 {% endfor %}
+</div>
 
 <!-- pagination -->
 {% if paginator.total_pages > 1 %}
@@ -19,9 +23,9 @@ layout: page
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <span class="webjeda">{{ page }}</span>
+      <span class="pagenum">{{ page }}</span>
     {% elsif page == 1 %}
-      <a href="/">{{ page }}</a>
+      <a href="/blog">{{ page }}</a>
     {% else %}
       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}

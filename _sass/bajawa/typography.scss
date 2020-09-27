@@ -108,6 +108,22 @@ h1.logo-left {
 
 /** POST TYPOGRAPHY **/
 
+.blogpost-title {
+  h3 {
+    font-family: $alternate-font-type;
+    font-size: 18px;
+    margin: $base-spacing/2 0 0 0;
+  }
+  p {
+    font-family: $base-font-type;
+    font-size: 14px;
+    margin: 1em 0 1em 0;
+  }
+  span {
+    font-size: 12px;
+  }
+}
+
 h1.post-title {
   color: $dark-berry;
   font-size: $page-title;
