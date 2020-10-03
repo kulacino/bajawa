@@ -98,8 +98,10 @@ hr {
   /** Front Page Layout **/
     /** 1. Hero Image **/
   .main-content-front {
-    padding: 0 0 100px 0;
+    padding: 0 0 80px 0;
     margin: 0;
+    height: calc(100% - 100px - 100px); //total height minus header minus footer
+
 
     .hero-wrapper {
       padding: 0;
@@ -182,7 +184,7 @@ hr {
           }
         }
         .button-post {
-          width: $maxwidth;
+          width: 100%;
           margin-left: auto;
           margin-right: auto;
           text-align: center;
@@ -215,6 +217,7 @@ hr {
     max-width: $maxwidth;
     margin: $base-spacing auto $base-spacing auto;
     padding: $base-spacing;
+    height: calc(100% - 100px - 100px); //total height minus header and footer
 
     .post-header {
       height: 80px;
@@ -237,7 +240,7 @@ hr {
 
 /*** Page Layout ***/
   .page-container {
-    height: $maxheight;
+    height: calc(100% - 100px - 100px); //total height minus header minus footer
 
     .page-wrapper {
       max-width: $maxwidth;
@@ -247,12 +250,33 @@ hr {
 
       .page-header {
         height: 80px;
-        margin: $base-spacing 0 $base-spacing 0;
+        margin: 2em 0 2em 0;
       }
 
       .page-content {
         margin: $base-spacing 0 $base-spacing 0;
         color: $dark-grey;
+
+        //LUNR Search settings under page content
+        .form-control {
+            border: 2px solid $medium-grey;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 20px;
+            font-style: $base-font-size;
+            font-size: 14px;
+          }
+        #lunrsearchresults {
+          padding-top: 0.2rem;
+        }
+        .lunrsearchresult {padding-bottom: 1rem;}
+        .lunrsearchresult .title {color: $dark-berry; font-family: $alternate-font-type;}
+        .lunrsearchresult .url {color: $medium-grey;}
+        .lunrsearchresult .url a:hover {color: $light-berry;}
+        .lunrsearchresult a {display: block; color: $dark-grey;}
+        .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+        .lunrsearchresult a:hover .title {text-decoration: underline;}
       }
 
       /** Only for Pagination and Blog Page only **/
@@ -266,15 +290,14 @@ hr {
         margin-right: -2px;
         background-color: #ffffff;
         display: inline-block;
+        font-size: 12px;
       }
-
       .pagination a {
         &:hover {
           background-color: #f1f1f1;
           color: #333;
         }
       }
-
       .pagination {
         text-align: center;
         margin-top: 2.5em;
@@ -284,11 +307,10 @@ hr {
 
 /** Footer **/
   .site-footer {
-    background-color: $light-grey;
+    border-top: 1px solid $light-grey;
     width: 100%;
     height: 100px;
     position: relative;
-    vertical-align: middle;
 
     .footer-container {
       padding: $base-spacing;

@@ -20,7 +20,7 @@ Gem: 0.1.0
 [1]: https://kulacino.github.io/bajawa
 [2]: ss01.png "site screenshot"
 
-**If you like and enjoy this theme, please consider [treating me a coffee](https://paypal.me/ayuwindd) so I could develop and maintain it regularly.
+**If you like and enjoy this theme, please consider [treating me a coffee](https://paypal.me/ayuwindd) so I could develop and maintain it regularly.**
 
 ## Table of Contents
 
@@ -166,6 +166,7 @@ To add a custom directory to your theme-gem, please edit the regexp in `bajawa.g
 Below is attributions and credits to external sources, such as: `image`, `code`, `script`, etc.
 - [Hero Image](https://github.com/kulacino/bajawa/blob/master/assets/images/heroimg.jpg) captured by [Carolyn V](https://unsplash.com/@sixteenmilesout?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) downloaded via [Unsplash](https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 - [Test Image](https://github.com/kulacino/bajawa/blob/master/assets/images/test.jpg) captured by [Billy Cox](https://unsplash.com/@billy_c?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) downloaded via [Unsplash](https://unsplash.com/s/photos/pastel-photos?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+- Search Page using [lunr.js](https://lunrjs.com/)
 
 ## License
 
