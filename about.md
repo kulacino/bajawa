@@ -27,7 +27,7 @@ Gem: 0.1.0
 [1]: https://kulacino.github.io/bajawa
 [2]: ../ss01.png "site screenshot"
 
-**If you like and enjoy this theme, please consider [treating me a coffee](https://paypal.me/ayuwindd) so I could develop and maintain it regularly.**
+**If you like and enjoy this theme, please consider [treating me a coffee](https://ko-fi.com/kulacino) so I could develop and maintain it regularly.**
 
 ## Table of Contents
 
