@@ -7,3 +7,4 @@
 .git
 _site
 Gemfile.lock
+.ruby-version
