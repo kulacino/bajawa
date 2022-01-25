@@ -10,7 +10,7 @@ Bajawa could be used as a starter also. Customize and tweak it with your own sty
 **Bajawa theme information:**
 
 ```
-Author: Cynthia Ayu W.
+Author: C. Ayu W.
 Repository: https://github.com/kulacino/bajawa
 Version: 0.1.0
 Gem: 0.1.0
